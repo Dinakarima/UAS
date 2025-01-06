@@ -1,0 +1,173 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+/* Heading styling */
+h1 {
+    color: #010c01;
+    margin-bottom: 20px;
+}
+
+/* Link styling */
+a {
+    text-decoration: none;
+    color: #1a1196;
+    background-color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+a:hover {
+    background-color: #fff;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #d41717;
+    color: white;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Button styling */
+button {
+    color: rgb(238, 233, 233);
+    background-color: #f30f0f;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Edit button styling */
+button.edit {
+    background-color: #FFC107; /* Kuning */
+}
+
+button.edit:hover {
+    background-color: #ffca28; /* Kuning lebih terang */
+}
+
+/* Delete button styling */
+button.delete {
+    background-color: #F44336; /* Merah */
+}
+
+button.delete:hover {
+    background-color: #e53935; /* Merah lebih gelap */
+}
+
+/* Kotak untuk tombol */
+button.edit, button.delete {
+    border: 2px solid transparent; /* Border default */
+    transition: border-color 0.3s; /* Transisi border */
+}
+
+button.edit:hover {
+    border-color: #ffca28; /* Border kuning saat hover */
+}
+
+button.delete:hover {
+    border-color: #e53935; /* Border merah saat hover */
+}
+
+/* Form styling */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input[type="text-search"],
+select {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #1a0202;
+    border-radius: 5px;
+}
+input[type="text"],
+input[type="number"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #1a0202;
+    border-radius: 5px;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+select:focus {
+    border-color: #d41717;
+    outline: none;
+}
+
+/* Message styling */
+.message {
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.success {
+    background-color: #dff0d8;
+    color: #d41717;
+}
+
+.error {
+    background-color: #f2dede;
+    color: #a94442;
+}
+
+/* Responsive styling */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    button {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
